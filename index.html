@@ -514,32 +514,34 @@
 		
 
 		<script>
-            var positionElementInPage = $('#banner').offset().top;
-            $( window ).resize(function() {
-                positionElementInPage = $('#global-nav').offset().top;
-            });
-            $(window).scroll(
-                function() {
-                    if ($(window).scrollTop() > positionElementInPage) {
-                        $('#global-nav').removeClass('nav-opacity');
-                        $('#global-nav').addClass('scrolled-nav');
-                        $('nav ul').addClass('scroll-ul');
-                        $('.logo ').attr('src','img/logo-small.png');
-                    } else {
-                        
-                        $('#global-nav').addClass('nav-opacity');
-                        $('#global-nav').removeClass('scrolled-nav');
-                        $('nav ul').removeClass('scroll-ul');
-                        $('.logo ').attr('src','img/logo.png');
-                    } 
-                }
-            );
             (function($) {
                 "use strict"; // Start of use strict
 
-                // Closes the Responsive Menu on Menu Item Click
-                $('.navbar-collapse ul li a').click(function(){ 
-                    $('.navbar-toggle:visible').click();
+                $(document).ready(function() {
+                    // Check if document is already scrolled
+                    var positionElementInPage = $('#banner').offset().top;
+                        $( window ).resize(function() {
+                        positionElementInPage = $('#global-nav').offset().top;
+                    });
+                    $(window).scroll(
+                        function() {
+                            if ($(window).scrollTop() > positionElementInPage) {
+                                $('#global-nav').removeClass('nav-opacity');
+                                $('#global-nav').addClass('scrolled-nav');
+                                $('nav ul').addClass('scroll-ul');
+                                $('.logo ').attr('src','img/logo-small.png');
+                            } else { 
+                                $('#global-nav').addClass('nav-opacity');
+                                $('#global-nav').removeClass('scrolled-nav');
+                                $('nav ul').removeClass('scroll-ul');
+                                $('.logo ').attr('src','img/logo.png');
+                            } 
+                        }
+                    );
+                     // Closes the Responsive Menu on Menu Item Click
+                    $('.navbar-collapse ul li a').click(function(){ 
+                        $('.navbar-toggle:visible').click();
+                    });
                 });
             })(jQuery);
         </script>        
