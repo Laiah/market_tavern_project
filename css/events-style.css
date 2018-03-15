@@ -1,0 +1,129 @@
+h2 { 
+    text-align: center;
+    font-size: 2em;
+    margin-top: 10%;
+}
+/* -------- CAROUSEL -------- */
+.slider {
+  max-width: 50;
+}
+
+.carousel-inner {
+  padding-top: 4%;
+}
+
+/* -------- CALENDAR -------- */
+.calendar h2 {
+  margin-bottom: 5%;
+}
+
+.dscEvent{
+    text-align: justify;
+    margin:6%;
+    line-height: 2;
+}
+
+.jzdbox1 {
+  width:315px; 
+  background:#332f2e; 
+  border-radius:5px; 
+  overflow:hidden; 
+  display:block; 
+  margin-bottom:10px; 
+  box-shadow:0 0 10px #201d1c; 
+  margin:0 auto; 
+}
+
+.jzdcal {
+  padding:0 10px 10px 10px; 
+  box-sizing:border-box!important; 
+  background:#749d9e; 
+  background: -webkit-linear-gradient(#749d9e, #b3a68b)!important; 
+  background: -o-linear-gradient(#749d9e, #b3a68b)!important; 
+  background: -moz-linear-gradient(#749d9e, #b3a68b)!important; 
+  background: linear-gradient(#2D2137, #b3a68b)!important;
+}
+
+.jzdcalt {
+  font:18px 'ITC Mona Lisa Std'; 
+  font-weight:700; 
+  color:#f7f3eb; 
+  display:block; 
+  margin:18px 0 0 0; 
+  text-transform:uppercase; 
+  text-align:center; 
+  letter-spacing:1px;
+}
+
+.jzdcal span {
+  font:11px 'Raleway'; 
+  font-weight:400; 
+  color:#f7f3eb; 
+  text-align:center; 
+  width:42px; 
+  height:42px; 
+  display:inline-block; 
+  float:left; 
+  overflow:hidden; 
+  line-height:40px;
+}
+
+.jzdcal .jzdb:before {
+  opacity:0.3; 
+  content:'o';
+}
+
+.circle {
+  border:1px solid #f7f3eb; 
+  box-sizing:border-box!important; 
+  border-radius:200px!important;
+}
+
+span[data-title="Live Sport All Day"] {
+  border-color: #282536;
+}
+
+span[data-title="Ladies Night !"] {
+  border-color: #DC012B;
+}
+
+span[data-title]:hover:after, 
+div[data-title]:hover:after {
+  font:11px 'Raleway'; 
+  font-weight:400; 
+  content:attr(data-title); 
+  position:absolute; 
+  margin:0 0 100px; 
+  background:#282423; 
+  border:1px solid #f7f3eb; 
+  color:#f7f3eb; 
+  padding:5px; 
+  z-index:9999; 
+  min-width:150px; 
+  max-width:150px;
+}
+
+span[data-title="Ladies Night !"]:hover:after {
+  left: 60%;
+}
+
+/* -------- MEDIA QUERIES -------- */
+@media screen and (min-width: 768px) {
+  .carousel-control {
+    background-image: none !important;
+  }
+
+  .text-item {
+    background-color: rgba(18%, 13%, 22%, 0.2);
+    padding: 18.8% 0;
+    text-align: center;
+  }
+
+  .text-item h3 {
+    font-size: 2em;
+  }
+
+  input[name=reservation_hour] {
+    margin-left : 41%;
+  }
+}

@@ -2,81 +2,546 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>The Market Tavern - Gastropub in Bordeaux</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	</head>
 
 	<body>
 		<header>
-			<nav>
-				
-			</nav>
-			<div id="banner">
-				
-			</div>
+			<nav id="global-nav" class="navbar-fixed-top nav-opacity navbar">
+                <div class="container-fluid">
+                    <div class="pull-left">
+                    	<a href="http://TheMarketTavernBordeaux.com"><img src="img/logo.png" class="logo" alt="logo"></a>
+                    	<button type="button" class="navbar-toggle btn-navbar" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav-list">
+                            <li><a href="#menus">Menus</a></li> 
+					        <li><a href="events.html">Events</a></li>
+					        <li><a href="about_us.html">About us</a></li>
+					        <li><a href="#reservations">Reservations</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+<!-- BANNER -->            
+            <div id="banner" class="dbanner">
+            	<img src="img/people_drinking.jpg" class="ibanner" alt="banner">
+            	<h1>The Market Tavern</h1>
+                <p class="slogan">"The Bordeaux Gastro-Pub"</p>
+            </div>
 		</header>
+<!-- MENUS -->
+		<section class="container-fluid menus" id="menus">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p class="drinkandfood">- Foods & Drinks -</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-6 food">
+                    <div class="thumbnail">
+                        <h2>Our menus<hr></h2>
+                        <img src="img/menuburger.jpeg" alt="burger gastronomique" class="burger" alt="burger">              
+                        <div class="caption">
+                            <p>Our menu changes with the season but always offers good, hearty and quality food.</p>
+                            <button type="button" class="btn btn-primary bouton" data-toggle="modal" data-target="#modal_food">Main menu</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 drink">
+                    <div class="thumbnail">
+                        <h2>Our drinks<hr></h2>
+                        <img src="img/cocktail2.jpg" alt="cocktail">
+                        <div class="caption">
+                            <p>What better to accompany your meal than a fresh, tasty beer? We have 10 different beers on tap.</p>
+                            <button type="button" class="btn btn-primary bouton" data-toggle="modal" data-target="#modal_drink">Drink menu</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- FOOD MODAL -->
+            <div id="modal_food" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Main menu</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#starters">Starters</a>
+                                        </h4>
+                                    </div>
+                                    <div class="panel-collapse collapse in" id="starters">
+                                        <p class="panel-body">
+                                            Soup of the day  5€<br>
+                                            Mozza Sticks 5.50€<br>
+                                            Deep Fried Camembert 5.50€<br>
+                                            Deep Fried Chèvre  5.90€<br>
+                                            Garlic Bread 6€<br>
+                                            Cheesy Garlic Bread 6.90€<br>
+                                            Market Tenders 6.50€
+                                        </p>
+                                    </div>
+                                </div>
 
-		<section id="menus">
-			<h2>Our menus</h2>
-			<div id="food_menu">
-				<img src="img/menu_burger.jpeg" alt="burger gastronomique">
-				<p>Our menu changes with the season but always offers good, hearty and quality food.</p>
-				<button></button>
-			</div>
-			<div id="drink_menu">
-				<img src="img/cocktail.jpg" alt="cocktail">
-				<p>What better to accompany your meal than a fresh, tasty beer? We have 10 different beers on tap.</p>
-				<button></button>
-			</div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#sharing_platters">Sharing Platters</a>
+                                        </h4>
+                                    </div>
+                                    <div class="panel-collapse collapse" id="sharing_platters">
+                                        <p class="panel-body">
+                                            Cheesy Nachos 9.90€<br>
+                                            Pulled Pork Nachos 12.90€ <br>
+                                            Mixed Platter 14.50€<br>
+                                            Three Cheese Platter 14.90€<br>
+                                            Tavern Platter 18.90€
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#signature_burgers">M.T Signature Burgers</a>
+                                        </h4>
+                                    </div>
+                                    <div class="panel-collapse collapse" id="signature_burgers">
+                                        <p class="panel-body">
+                                            Cheeseburger 10.90€<br>
+                                            Veggie Burger 12.90€<br>
+                                            Chicken Bacon Avocado 14.50€<br>
+                                            Fish Burger 14.50€<br>
+                                            Hog and Beef Burger 14.90€<br>
+                                            Burger Bordelais 14.90€<br>
+                                            Double Cheeseburger 15.90€
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#mains">Mains</a>
+                                        </h4>
+                                    </div>
+                                    <div class="panel-collapse collapse" id="mains">
+                                        <p class="panel-body">
+                                            Market BBQ Ribs 12.90€<br>
+                                            Crispy BBQ Chicken 12.90€<br>
+                                            Caesar Salad 13.90€<br>
+                                            The Market Salad 15€<br>
+                                            Traditional Fish and Chips 14.90€<br>
+                                            Tavern Pie 14.90€<br>
+                                            Angus Steak and Chips 19.50€
+                                        </p>
+                                    </div>
+                                </div> 
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#desserts">Desserts</a>
+                                        </h4>
+                                    </div>
+                                    <div class="panel-collapse collapse" id="desserts">
+                                        <p class="panel-body">
+                                            Ice Cream 4€<br>
+                                            Pain Perdu 5.50€<br>
+                                            Croonie 5.50€<br>
+                                            Market Cheesecake 6€<br>
+                                            Greedy Coffee 8€
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- DRINK MODAL -->
+            <div id="modal_drink" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Drinks menu</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="panel-group" id="accordion2">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion2" href="#cocktails">Cocktails</a>
+                                        </h4>
+                                    </div>
+                                    <div class="panel-collapse collapse in" id="cocktails">
+                                        <p class="panel-body">
+                                            English Punch 6.50€<br>
+                                            Negroni 8€<br>
+                                            Mojito 8€<br>
+                                            St Germain Mojito 8€<br>
+                                            Margarita 8€<br>
+                                            Raspberry Mash 8€<br>
+                                            Lynchburg Lemonade 8€<br>
+                                            Bloody Mary 8€<br>
+                                            Cosmopolitan 8€<br>
+                                            Sex on the Beach 8€<br>
+                                            White Russian 8€<br>
+                                            Cuba Libre 8€<br>
+                                            Dark and Stormy 8€<br>
+                                            Whisky Sour 8€
+                                        </p>
+                                        <hr>
+                                        <p class="panel-body">
+                                            <span class="alcool">Pint Cocktail :</span><br>
+                                            Long Island Iced Tea 10€<br>
+                                            Serbian Iced Tea 10€
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion2" href="#beers">Beers</a>
+                                        </h4>
+                                    </div>
+                                    <div class="panel-collapse collapse" id="beers">
+                                        <p class="panel-body">
+                                            <span class="alcool">Draught Beers : </span><br>
+                                            Craft Pilsner Lager (4.8%) 6€<br>
+                                            Twisted Thistle (5.6%) 6€ <br>
+                                            East Coast (4%) 6€<br>
+                                            Abbot Ale (5%) 6€<br>
+                                            Old Speckled Hen (5%) 6€<br>
+                                            Belhaven Black Stout (4.2%) 6€<br>
+                                            Magners Cider (4.5%) 6€<br>
+                                            Grimbergen Blanche (6%) 6.50€<br>
+                                            Carlsberg Elephant (7.2%) 6.50€<br>
+                                            Guest Beer 6.50€
+                                        </p>
+                                        <hr>
+                                        <p class="panel-body">
+                                            <span class="alcool">Bottled Beers : </span><br>
+                                            Newcastle Brown 6.50€<br>
+                                            Bombardier 6.50€<br>
+                                            Grimbergen Rouge 5€<br>
+                                            Desperados 5€<br>
+                                            Corona 5€<br>
+                                            Bud 5€
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion2" href="#wines">Wines</a>
+                                        </h4>
+                                    </div>
+                                    <div class="panel-collapse collapse" id="wines">
+                                        <p class="panel-body">
+                                            <span class="alcool">Red Wines : </span><br>
+                                            Domaine du Seuil 14€<br>
+                                            Château Haut-Louilleau 14€<br>
+                                            Château de Teste 19€
+                                        </p>
+                                        <hr>
+                                        <p class="panel-body">
+                                            <span class="alcool">White Wines : </span><br>
+                                            Domaine du Seuil 14€<br>
+                                            Domaine de Bordes 18€<br>
+                                            Château de Teste 18€
+                                        </p>    
+                                        <hr>
+                                        <p class="panel-body">    
+                                            <span class="alcool">Rosé Wines : </span><br>
+                                            Domaine du Seuil 14€<br>
+                                            Rosé de Sophie 18€
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion2" href="#spirits">Spirits</a>
+                                        </h4>
+                                    </div>
+                                    <div class="panel-collapse collapse" id="spirits">
+                                        <p class="panel-body">
+                                            <span class="alcool">Rum : </span><br>
+                                            Bacardi Superior 6€<br>
+                                            Bacardi Gold 6.50€<br>
+                                            Malibu 6€<br>
+                                            Captain Morgan Spiced 6.50€<br>
+                                            Diplomatico 7.50€<br>
+                                            Kraken 7.50€<br>
+                                            Appleton Estate Rare Blend 8€
+                                        </p>
+                                        <hr>
+                                        <p class="panel-body">
+                                            <span class="alcool">Vodka : </span><br>
+                                            Absolut Vodka : 6€<br>
+                                            Zubrowka : 7€<br>
+                                            Grey Goose : 9€
+                                        </p>
+                                        <hr>
+                                        <p class="panel-body">
+                                            <span class="alcool">Gin : </span> <br>
+                                            Beefeater : 6€<br>
+                                            Bombay Sapphire : 6.50€<br>
+                                            Edinburgh Gin : 6.50€<br>
+                                            Hendrick's : 7.50€
+                                        </p>
+                                        <hr>
+                                        <p class="panel-body">
+                                            <span class="alcool">Tequila : </span><br>
+                                            Jose Cuervo Silver : 6€<br>
+                                            Patron : 9€
+                                        </p>    
+                                        <hr>
+                                        <p class="panel-body">
+                                            <span class="alcool">Whiskey : </span><br>
+                                            Jack Daniel's : 6.50€<br>
+                                            Monkey Shoulder : 7.50€<br>
+                                            Maker's Mark : 7.50€<br>
+                                            Glenfiddich : 10€<br>
+                                            Glenlivet French Oak : 11€<br>
+                                            Lagavulin : 11€<br>
+                                            Glenlivet : 12€
+                                        </p>
+                                    </div>
+                                </div> 
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion2" href="#shots">Shots</a>
+                                        </h4>
+                                    </div>
+                                    <div class="panel-collapse collapse" id="shots">
+                                        <p class="panel-body">
+                                            Toffee Vodka 3.50€<br>
+                                            Baby Guinness 3.50€<br>
+                                            Springbok 3.50€<br>
+                                            Lemon Drop 3.50€<br>
+                                            Quick Fuck 3.50€
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 		</section>
+<!-- 6 IMAGES -->
+		<section id="news" class="news">
+			<div class="container-fluid">
+                <div class="row no-padding">
 
-		<section id="news">
-			<div>
-				
-			</div>
-			<div>
-				
-			</div>
-			<div>
-				
-			</div>
-			<div>
-				
-			</div>
-			<div>
-				
-			</div>
-			<div>
-				
-			</div>
-		</section>
+                    <div class=" col-xs-12 col-md-4 inew">
+                        <img src="img/carre1.jpg" class="carree">
+                        <div class="overlay">
+                            <div class="overlay-caption ">
+                            	<p class="match">Next broadcast : <br>
+                            		<i class="fas fa-basketball-ball"></i> Perth - Adelaide <br>
+                            		09/03/18 at 11:30AM <br>
+                            		<i class="fas fa-futbol"></i> Liverpool - Manchester United <br>
+                            		09/03/18 at 8PM <br>
+                            		<i class="fas fa-football-ball"></i> France - England <br>
+                            		10/03/18 at 5:45PM
+                            	</p>
+                            </div>        
+                        </div> 
+                    </div>
 
-		<section id="reservations">
-			<h2>Reservations</h2>
-			<form>
-				<input type="text" name="first_name">
-				<input type="text" name="last_name">
-				<input type="tel" name="phone_number">
-				<input type="datetime-local" name="reservation_date">
-				<!--<input type="" name="reservation_hour">-->
-				<input type="submit" name="submit">
-			</form>
-			<div>
-				<h3>Contact</h3>
-				<p>The Market Tavern <br>
-				15 rue Rode, <br>
-				33000 Bordeaux <br>
-				05.56.44.09.58
-				</p>
-			</div>
+                    <div class=" col-xs-12 col-md-4 inew">
+                        <img src="img/carre2.jpg" class="carree">
+                        <div class="overlay">
+                            <div class="overlay-caption">
+                            	<p class="burger-week">Burger of the week : <br>
+                            	Burger Bordelais. <br>
+                            	Homemade bread, duck steak, homemade cheddar sauce, stewed onions, salad, tomatoes.</p>
+                            </div>        
+                        </div> 
+                    </div>
 
-		</section>
+                    <div class=" col-xs-12 col-md-4 inew hidden-xs">
+                        <img src="img/carre9.jpg" class="carree">
+                        <div class="overlay">
+                            <div class="overlay-caption">
+                            	<p class="quiz">Don't miss our weekly pub quiz !<br>
+                            	Every sunday at 8:30PM</p>
+                            </div>        
+                        </div> 
+                    </div>
+                </div>
 
-		<footer>
+                <div class="row no-padding">
+                	<div class=" col-xs-12 col-md-4 inew">
+                        <img src="img/carre5.jpg" class="carree">
+                        <div class="overlay">
+                            <div class="overlay-caption">
+                            	<p class="cocktail">Cocktail of the week: <br>
+                            		St Germain Mojito. <br>
+                            		Bacardi, St Germain, mint, lime, cane sugar, crushed ice, soda.</p>
+                            </div>        
+                        </div> 
+                    </div>
+
+                    <div class=" col-xs-12 col-md-4 inew">
+                        <img src="img/carre6.jpg" class="carree">
+                        <div class="overlay">
+                            <div class="overlay-caption">
+                            	<p class="tv-screen">With three large HD Screens with Sky Sports and BT Sports, no game is ever missed!<br>
+                            	Regardless if you’re English, Irish, Scottish, Welsh or French supporters, we have the live sport in Bordeaux that you’re looking for.</p>
+                            </div>        
+                        </div> 
+                    </div>
+
+                    <div class=" col-xs-12 col-md-4 inew hidden-xs">
+                        <img src="img/carre7.jpg" class="carree">
+                        <div class="overlay">
+                            <div class="overlay-caption">
+                            	<p class="ribs">New dish: <br>
+                            		Market BBQ Ribs. <br>
+                            	Slow cooked caramelized pork ribs, bbq sauce, served with freshed french fries and salad.</p>
+                            </div>        
+                        </div> 
+                    </div>
+                </div>
 			
+		</section>
+<!-- RESERVATIONS -->
+		<section id="reservations">
+			<div class="container">
+				<div class="row">
+					<h2>Reservations</h2>
+                    <div class="col-md-4 hours">
+                        <h3>Opening hours</h3>
+                        <p>
+                            Mon to Fri : 12h00 – 00h00 <br>
+                            Weekends : 12h00 – 02h00
+                        </p>
+                        <h3>Kitchen hours</h3>
+                        <p>
+                            Mon to Fri : 12h00 – 14h30, 19h00 – 22:00 <br>
+                            Weekends : 12h30 – 15h00, 19h00 -22h00
+                        </p>
+                    </div>
+					<form class="col-md-4">
+						<div class="form-group">
+							<label for="first_name">First name</label>
+							<input type="text" name="first_name" class="form-control">
+						</div>	
+						<div class="form-group">
+							<label for="last_name">Last name</label>
+							<input type="text" name="last_name" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="phone_number">Phone number</label>
+							<input type="tel" name="phone_number" class="form-control">
+						</div>
+						<div class="form-group">
+							<div>	
+								<label for="reservation_date">Reservation date</label>
+								<input type="date" name="reservation_date">
+							</div>
+							<div>
+								<label for="reservation_hour">Hour</label>
+								<input type="time" name="reservation_hour" >
+							</div>
+						</div>
+						<input type="submit" name="submit">
+					</form>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.47828230895!2d-0.5744692494228659!3d44.8525571819652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd552879c241f0a7%3A0xb03531d05a62180!2sThe+Market+Tavern!5e0!3m2!1sfr!2sfr!4v1520419738602" width="400" height="300" frameborder="0" style="border:0" allowfullscreen class="col-md-4 col-xs-12"></iframe>
+				</div>
+			</div>
+		</section>
+<!-- FOOTER -->
+		<footer>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-6 col-md-3 col-md-offset-2 contact">
+						<h3>Contact</h3>
+						<p>
+							The Market Tavern <br>
+							15 rue Rode, <br>
+							33000 Bordeaux <br>
+							05.56.44.09.58
+						</p>
+					</div>
+					<div class="col-xs-6 col-md-3 col-md-offset-2 social">
+						<h3>Social networks</h3>
+						<ul class="social_icons">
+							<li><a href="https://www.facebook.com/themarkettavernbordeaux/" class="btn btn-default"><i class="fab fa-facebook-f"></i></a></li>
+							<li class="second_btn"><a href="https://www.instagram.com/themarkettavernbdx/" class="btn btn-default"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="https://www.tripadvisor.fr/Restaurant_Review-g187079-d8563953-Reviews-The_Market_Tavern-Bordeaux_Gironde_Nouvelle_Aquitaine.html" class="btn btn-default"><i class="fab fa-tripadvisor"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row copyright">
+					<span>2018 - Created by 4wild Team</span>
+				</div>
+			</div>
 		</footer>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
 
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script>
+            var positionElementInPage = $('#banner').offset().top;
+            $( window ).resize(function() {
+                positionElementInPage = $('#global-nav').offset().top;
+            });
+            $(window).scroll(
+                function() {
+                    if ($(window).scrollTop() > positionElementInPage) {
+                        $('#global-nav').removeClass('nav-opacity');
+                        $('#global-nav').addClass('scrolled-nav');
+                        $('nav ul').addClass('scroll-ul');
+                        $('.logo ').attr('src','img/logo-small.png');
+                    } else {
+                        
+                        $('#global-nav').addClass('nav-opacity');
+                        $('#global-nav').removeClass('scrolled-nav');
+                        $('nav ul').removeClass('scroll-ul');
+                        $('.logo ').attr('src','img/logo.png');
+                    } 
+                }
+            );
+            (function($) {
+                "use strict"; // Start of use strict
+
+                // Closes the Responsive Menu on Menu Item Click
+                $('.navbar-collapse ul li a').click(function(){ 
+                    $('.navbar-toggle:visible').click();
+                });
+            })(jQuery);
+        </script>        
 	</body>
 </html>
